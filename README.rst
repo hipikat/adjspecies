@@ -1,8 +1,15 @@
-`adjspecies` is a Python module which generates random names formed from
+=================
+adjective/species
+=================
+
+The ``adjspecies`` Python module generates random names formed from
 an animal and a descriptor.
 
 Usage
 =====
+
+From the command line
+---------------------
 
 .. code:: bash
 
@@ -27,6 +34,24 @@ Usage
     redpig
     pinkdoge
     lynxpaw
+    
+In Python code
+--------------
+
+.. code:: python
+
+    >>> import adjspecies
+    >>> help(adjspecies.random_adjspecies)
+    Help on function random_adjspecies in module adjspecies:
+    
+    random_adjspecies(sep='', maxlen=8, prevent_stutter=True)
+        Return a random adjective/species, separated by `sep`. The keyword
+        arguments `maxlen` and `prevent_stutter` are the same as for
+        `random_adjspecies_pair`, but note that the maximum length argument is
+        not affected by the separator.
+    
+    >>> adjspecies.random_adjspecies('.', 7)
+    'wolf.toy'
 
 About
 =====
@@ -55,5 +80,5 @@ developer called `@pypikat`_ and a human being named `@hipikat`_.
 
 .. _Adam Wright: http://hipikat.org/
 .. _@chipikat: https://twitter.com/chipikat
-.. _@pyipikat: https://twitter.com/pypikat
+.. _@pypikat: https://twitter.com/pypikat
 .. _@hipikat: https://twitter.com/hipikat
