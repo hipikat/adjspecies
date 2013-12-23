@@ -20,7 +20,7 @@ From the command line
 
 .. code:: bash
 
-    $ python adjspecies.py -h
+    $ adjspecies --help
     usage: adjspecies.py [-h] [--maxlen MAXLEN] [--sep SEPARATOR] [--count COUNT]
                          [--prevent-stutter]
     

@@ -6,7 +6,7 @@ import adjspecies
 
 setup(
     name='adjspecies',
-    version='0.1.2',
+    version='0.1.3',
     description=adjspecies.__doc__,
     long_description=(open('README.rst').read()),
     url='http://github.com/hipikat/adjspecies/',
