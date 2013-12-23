@@ -5,6 +5,7 @@ Print the name of a random adjective/species, more or less…
 
 import argparse
 from itertools import chain
+from os import path
 from random import choice
 import sys
 
@@ -21,8 +22,9 @@ parser.add_argument('--prevent-stutter', action='store_true',
                     "(default=True)")
 
 
-def get_file_lines(file_path):
+def get_file_lines(file_name):
     """Return a list of non-empty lines from `file_path`."""
+    file_path = path.join(path.dirname(path.abspath(__file__)), file_name)
     with open(file_path) as file_obj:
         return [line for line in file_obj.read().splitlines() if line]
 
