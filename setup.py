@@ -15,9 +15,11 @@ setup(
     author_email='adam@hipikat.org',
     packages=['adjspecies'],
     include_package_data=True,
-    package_data={
-        '': '*.txt',
-    },
+    entry_points={
+        'console_scripts': [
+            'adjspecies = adjspecies:main',
+        ],
+    }
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
