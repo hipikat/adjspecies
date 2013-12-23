@@ -6,6 +6,7 @@ Print the name of a random adjective/species, more or less…
 import argparse
 from itertools import chain
 from random import choice
+import sys
 
 
 parser = argparse.ArgumentParser(description=__doc__)
@@ -83,7 +84,11 @@ def random_adjspecies(sep='', maxlen=8, prevent_stutter=True):
     return pair[0] + sep + pair[1]
 
 
-if __name__ == '__main__':
+def main(*argv):
     args = parser.parse_args()
     for count in range(args.count):
         print random_adjspecies(args.sep, args.maxlen)
+
+
+if __name__ == '__main__':
+    main(sys.argv)
