@@ -5,6 +5,13 @@ adjective/species
 The ``adjspecies`` Python module generates random names formed from
 an animal and a descriptor.
 
+Installation
+============
+
+.. code:: bash
+
+    $ pip install -U adjspecies
+
 Usage
 =====
 
