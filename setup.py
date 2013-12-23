@@ -19,7 +19,7 @@ setup(
         'console_scripts': [
             'adjspecies = adjspecies:main',
         ],
-    }
+    },
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
