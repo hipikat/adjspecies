@@ -89,7 +89,7 @@ def random_adjspecies(sep='', maxlen=8, prevent_stutter=True):
 def main(*argv):
     args = parser.parse_args()
     for count in range(args.count):
-        print random_adjspecies(args.sep, args.maxlen)
+        print(random_adjspecies(args.sep, args.maxlen))
 
 
 if __name__ == '__main__':
